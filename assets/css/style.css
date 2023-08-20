@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.p-3 .text-area-con {
+    position: relative;
+}
+
+.p-3 .text-area-con .icon-con {
+    width: fit-content;
+    position: absolute;
+    top: -50%;
+    right: 10px;
+}
+
+.p-3 .text-area-con .icon-con i {
+    color: gray;
+    position: relative;
+}
+
+.p-3 .text-area-con .icon-con i:hover {
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+}
+
+.p-3 .text-area-con .icon-con i::after {
+    content: attr(title);
+    position: absolute;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    white-space: nowrap;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    transform: translate(-40%, -135%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p-3 .text-area-con .icon-con i:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fixed_image1,
+.fixed_image2 {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/fixed1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.fixed_image2 {
+    background-image: url(../img/fixed2.jpg);
+}
+
+.fixed_image1::after,
+.fixed_image2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #33333375;
+}
+
+.links .container .row .p-3 {
+    box-shadow: 0px 0px 10px 0px gray;
+    width: fit-content;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.links .container .row .p-3:hover {
+    box-shadow: 0px 0px 5px 0px gray, 0px 0px 50px 0px gray inset;
+}
+
+.links .container .row .p-3 i {
+    background-color: black;
+    padding: 15px;
+    font-size: 35px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.links .container .row .p-3:hover i {
+    box-shadow: 0px 0px 5px 5px white;
+}
+
+.owners .row .card,
+.doctors .container .row .card {
+    box-shadow: 0px 0px 10px 0px gray;
+    overflow: hidden;
+}
+
+.owners .row .card .card-img-overlay {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #00000080;
+}
+
+.owners .row .card .card-img-overlay h5 {
+    font-weight: bold;
+}
+
+.owners .row .card:hover .card-img-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.owners .row .card .card-img-overlay .profile-con {
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 0px 5px 0px gray;
+    border-radius: 50%;
+    background-image: url(../img/owner1.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.owners .row .card .card-img-overlay .pro-con-2 {
+    background-image: url(../img/owner2.jpg);
+}
+
+.owners .row .card .card-img-overlay .pro-con-3 {
+    background-image: url(../img/owner3.jpg);
+}
+
+.owners .row .card .card-img-overlay .profile-con .details {
+    position: absolute;
+    white-space: nowrap;
+    width: 150px;
+    color: white;
+    line-height: 5px;
+    top: 50%;
+    right: -230%;
+    transform: translateY(-26%);
+}
+
+.owners .row .card .card-img-overlay .profile-con .details .name {
+    font-weight: bold;
+}
+
+.owners .row .card img {
+    transition: 0.3s;
+}
+
+.owners .row .card:hover img {
+    transform: scale(1.1);
+}
+
+.pranches .container .card {
+    box-shadow: 0px 0px 10px 0px gray;
+}
+
+.pranches .container .card:nth-child(odd) img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 11% 100%);
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    height: 100%;
+}
+
+.pranches .container .card:nth-child(even) img {
+    clip-path: polygon(0% 0%, 100% 0%, 89% 100%, 0% 100%);
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+    height: 100%;
+}
+
+.pranches .container .title-line {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.pranches .container .title-line::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    background-color: blue;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.pranches .container .card:hover .title-line::after {
+    width: 170px;
+}
+
+.pranches .container .buttons button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 3px;
+    padding: 2px 7px;
+    transition: 0.3s;
+}
+
+.pranches .container .buttons button:hover {
+    background-color: #aaa;
+}
+
+.pranches .container .card-title {
+    font-size: 30px;
+}
+
+.pranches .container .row .card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .pranches .container .card .row>.col-md-8 {
+        order: 2;
+    }
+
+    .pranches .container .card .row>.col-md-4 {
+        order: 1;
+    }
+
+    .pranches .container .card .row .col-md-4 img {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        border-radius: 0.375rem 0.375rem 0rem 0rem;
+    }
+}
+
+footer .container .row .col .text-center a p {
+    margin: 20px 0px;
+}
+
+footer .container .row .col .col-12 img {
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+footer .container .row .col .col-12 a h5 {
+    margin: 0px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+

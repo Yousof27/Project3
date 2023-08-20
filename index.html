@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/cdn.jsdelivr.xyz_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="assets/css/all.css">
+
+</head>
+
+<body>
+
+
+    <!-- Start Modal -->
+    <div class="modal fade" id="myModal" style="position: fixed; z-index: 10000;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal header -->
+                <div class="modal-header bg-info">
+                    <h5 class="modal-title text-light">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal body -->
+
+                <form style="padding: 20px;">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-info">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label text-info">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Remmember me</label>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Modal footer -->
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-secondary text-start" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Modal -->
+
+
+
+    <!-- Start Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+        style="position: fixed; z-index: 1000; width: 100vw; padding-right: 20px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Easy Care</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#question">Question</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#doctors">Doctors</a></li>
+                            <li><a class="dropdown-item" href="#owners">Thanks for</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#branches">Branches</a></li>
+                            <li><a class="dropdown-item" href="#links">Links</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                        data-bs-target="#myModal" style="margin-left: 8px;">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header -->
+
+
+
+    <!-- Start Main -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-color: #000;">
+                <img src="assets/img/background1.jpg" class="d-block w-100"
+                    style="height: 100vh; object-fit: cover; opacity: 0.7;">
+                <div class="carousel-caption"
+                    style="background-color: #333333d0; border-radius: 10px; width: fit-content; margin: auto; padding: 20px 5%;">
+                    <h2>Welcome To Our Hospital</h2>
+                    <p>Your health is our top priority</p>
+                    <a href="#" class="btn btn-primary">Take a look</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-color: #000;">
+                <img src="assets/img/background2.jpg" class="d-block w-100"
+                    style="height: 100vh; object-fit: cover; opacity: 0.7;">
+                <div class="carousel-caption" style="background-color: #333333d0; border-radius: 10px;">
+                    <h2>Welcome To Our Hospital</h2>
+                    <p>You Will Be Better Than Before</p>
+                    <a href="#" class="btn btn-primary">Take a look</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-color: #000;">
+                <img src="assets/img/background3.jpg" class="d-block w-100"
+                    style="height: 100vh; object-fit: cover; opacity: 0.7;">
+                <div class="carousel-caption" style="background-color: #333333d0; border-radius: 10px;">
+                    <h2>Welcome To Our Hospital</h2>
+                    <p>Your Health Is More Important</p>
+                    <a href="#" class="btn btn-primary">Take a look</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- End Main -->
+
+
+
+    <!-- Start Sec1 -->
+    <div class="card" style="border-radius: 0px; border: none; background-color: #333333d0;">
+        <div class="card-body text-center text-light">
+            <p class="card-text">Our hospital is one of the largest in the world, our doctors are at the highest levels,
+                specializing in all fields, and they will be happy to help you.</p>
+            <a href="#" class="btn btn-primary">Appointment</a>
+        </div>
+    </div>
+    <!-- End Sec1 -->
+
+
+
+    <!-- Start Sec2 -->
+    <div id="about" class="bg-light text-center pt-2">
+        <h2 class="text-dark p-3">About us</h2>
+    </div>
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Emergency Room:
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The emergency room of a hospital is a bustling and critical area where patients with urgent
+                        medical
+                        needs receive immediate care. It is staffed by a team of dedicated healthcare professionals,
+                        including doctors, nurses, and technicians, who work tirelessly to stabilize patients and
+                        provide
+                        essential treatments. With its state-of-the-art equipment and round-the-clock availability, the
+                        emergency room plays a vital role in saving lives, managing acute injuries, and delivering
+                        prompt
+                        medical interventions.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Maternity Ward:
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The maternity ward is a place of joy, anticipation, and nurturing care within a hospital. It is
+                        where expectant mothers receive specialized medical attention before, during, and after
+                        childbirth.
+                        The ward is equipped with comfortable birthing suites, monitoring equipment, and skilled
+                        obstetricians, midwives, and nurses who support women through the entire birthing process. From
+                        prenatal consultations to postnatal care, the maternity ward ensures the well-being of both
+                        mother
+                        and baby, fostering a safe and welcoming environment for the start of a new life.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Radiology Department:
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The radiology department is an essential component of modern healthcare, utilizing advanced
+                        imaging
+                        techniques to aid in diagnosis and treatment planning. Equipped with cutting-edge technology
+                        such as
+                        X-rays, CT scans, MRIs, and ultrasound machines, this department plays a crucial role in
+                        visualizing
+                        internal structures and detecting abnormalities. Radiologists and radiology technologists work
+                        collaboratively to capture and interpret images, providing valuable insights that assist
+                        physicians
+                        in making accurate diagnoses and developing effective treatment strategies for patients across
+                        various medical specialties.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Sec2 -->
+
+    <hr>
+
+    <!-- Start Sec3 -->
+    <div id="question" class="text-center bg-light mt-2">
+        <h2 class="text-dark p-3">Questions</h2>
+    </div>
+    <div class="container">
+        <div class="p-3">
+            <p style="font-size: 18px; font-weight: bold;">Tell us your question</p>
+            <div class="text-area-con">
+                <textarea class="form-control mb-3" id="message-text" placeholder="Write your question"></textarea>
+                <div class="icon-con row">
+                    <div class="col"><i title="Copy Text" class="far fa-clone"></i></div>
+                    <div class="col"><button id="delBtn" type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Sec3 -->
+
+
+    <!-- Start Sec4 -->
+    <div class="fixed_image1"></div>
+    <!-- End Sec4 -->
+
+
+    <!-- Start Sec5 -->
+    <div id="doctors" class="doctors">
+        <div class="text-center bg-light mt-3">
+            <h2 class="text-dark p-3">Our Best Doctors</h2>
+        </div>
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="card col-lg-4 col-md-6 col-sm-12 my-3" style="width: 21rem; padding: 0;">
+                    <img src="assets/img/doc1.jpg" alt="" class="card-image-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mohammad Ali</h5>
+                        <p class="card-text">General Practitioner</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-sm-12 my-3" style="width: 21rem; padding: 0;">
+                    <img src="assets/img/doc2.png" alt="" class="card-image-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Ahmed Omar</h5>
+                        <p class="card-text">Pediatrician</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-sm-12 my-3" style="width: 21rem; padding: 0;">
+                    <img src="assets/img/doc3.png" alt="" class="card-image-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Khalid Hassan</h5>
+                        <p class="card-text">Cardiologist</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-sm-12 my-3" style="width: 21rem; padding: 0;">
+                    <img src="assets/img/doc6.png" alt="" class="card-image-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Youssef Ibrahim</h5>
+                        <p class="card-text">Orthopedic Surgeon</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-sm-12 my-3" style="width: 21rem; padding: 0;">
+                    <img src="assets/img/doc5.png" alt="" class="card-image-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Hamza Abdullah</h5>
+                        <p class="card-text">Psychiatrist</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-sm-12 my-3" style="width: 21rem; padding: 0;">
+                    <img src="assets/img/doc4.png" alt="" class="card-image-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mahmoud Hasan</h5>
+                        <p class="card-text">Obstetrician/Gynecologist</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Sec5 -->
+
+
+    <!-- Start Sec6 -->
+    <div class="fixed_image2"></div>
+    <!-- End Sec6 -->
+
+
+    <!-- Start Sec7 -->
+    <div id="owners" class="owners">
+        <div class="text-center mt-3 bg-light">
+            <h2 class="text-dark p-3">Thanks For</h2>
+        </div>
+        <div class="container my-3">
+            <div class="row justify-content-around">
+
+                <div class="card col-lg-4 col-md-6 col-sm-12 my-3" style="width: 18rem; padding: 0;">
+                    <img src="assets/img/owner1.jpg" class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">The Owner</h5>
+                        <p class="card-text">Surgeon and doctor at Ain Shams University</p>
+                        <div class="profile-con">
+                            <div class="details">
+                                <p class="name">Dr.Ali Said</p>
+                                <p class="desc">The Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-sm-12 my-3" style="width: 18rem; padding: 0;">
+                    <img src="assets/img/owner2.jpg" class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">The Manger</h5>
+                        <p class="card-text">Responsible for managing the hospital</p>
+                        <div class="profile-con pro-con-2">
+                            <div class="details">
+                                <p class="name">M.Mohsen Saad</p>
+                                <p class="desc">The Manger</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-sm-12 my-3" style="width: 18rem; padding: 0;">
+                    <img src="assets/img/owner3.jpg" class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Doctor Mohammed</h5>
+                        <p class="card-text">Dentist and doctor at Ain Shams University</p>
+                        <div class="profile-con pro-con-3">
+                            <div class="details">
+                                <p class="name">Dr.Mohammed Ali</p>
+                                <p class="desc">Important Partner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Sec7 -->
+
+
+    <!-- Start Sec8 -->
+    <div id="branches" class="pranches">
+
+        <div class="text-center bg-light">
+            <h2 class="text-dark p-3">Our Branches</h2>
+        </div>
+
+        <div class="container">
+
+            <div class="card" style="width: 100%; margin: 2rem auto;">
+                <div class="row g-0 p-0">
+                    <div class="col-md-8">
+                        <div class="card-body p-5">
+                            <div class="text-con">
+                                <h5 class="card-title">Cairo branch</h5>
+                                <p class="card-text title-line"><small class="text-muted"><i
+                                            class="fas fa-calendar-alt"></i> Opend in July 27, 2002</small>
+                                </p>
+                                <p class="card-text">
+                                    Address: 123 Nile Street, Al-Giza District, Zamalek, Cairo, Egypt</p>
+                                <p>Cairo Hospital is a leading medical facility located in the heart of Egypt's
+                                    bustling capital city. With its state-of-the-art infrastructure and a team of highly
+                                    skilled healthcare professionals, the hospital is committed to providing exceptional
+                                    care to patients. Equipped with cutting-edge technology, Cairo Hospital offers a
+                                    wide range of specialized services, including advanced diagnostic imaging, surgical
+                                    procedures, and comprehensive rehabilitation programs. The hospital's compassionate
+                                    staff and patient-centered approach ensure that individuals receive personalized
+                                    attention and the highest quality of medical treatment.</p>
+                            </div>
+                            <div class="buttons">
+                                <button>Read More</button>
+                                <button>Rate</button>
+                                <button>Share</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/hos1.jpg" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 100%; margin: 2rem auto;">
+                <div class="row g-0 p-0">
+                    <div class="col-md-4">
+                        <img src="assets/img/hos2.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body p-5">
+                            <div class="text-con">
+                                <h5 class="card-title">Alexandria branch</h5>
+                                <p class="card-text title-line"><small class="text-muted"><i
+                                            class="fas fa-calendar-alt"></i> Opend in March 15, 2005</small>
+                                </p>
+                                <p class="card-text">
+                                    Address: 456 Corniche Road, Raml Station, Al-Mansheya, Alexandria, Egypt</p>
+                                <p>Situated along the picturesque Corniche Road, Alexandria Hospital stands as a beacon
+                                    of healthcare excellence in the coastal city. This modern medical center boasts a
+                                    multidisciplinary team of specialists who are dedicated to delivering top-notch care
+                                    to patients. From advanced cardiac interventions and minimally invasive surgeries to
+                                    specialized cancer treatments and comprehensive maternity services, Alexandria
+                                    Hospital offers a wide array of medical services. With a focus on patient comfort
+                                    and well-being, the hospital strives to create a healing environment, supported by
+                                    cutting-edge technology and a compassionate approach to healthcare.</p>
+                            </div>
+                            <div class="buttons">
+                                <button>Read More</button>
+                                <button>Rate</button>
+                                <button>Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 100%; margin: 2rem auto;">
+                <div class="row g-0 p-0">
+                    <div class="col-md-8">
+                        <div class="card-body p-5">
+                            <div class="text-con">
+                                <h5 class="card-title">Sharm El Sheikh branch</h5>
+                                <p class="card-text title-line"><small class="text-muted"><i
+                                            class="fas fa-calendar-alt"></i> Opend in November 10, 2010</small>
+                                </p>
+                                <p class="card-text">
+                                    Address: 101 Naama Bay, South Sinai Governorate, Sharm El Sheikh, Egypt</p>
+                                <p>Nestled amidst the stunning landscapes of Sharm El Sheikh, this hospital serves as a
+                                    vital healthcare hub for both residents and tourists. With a serene and inviting
+                                    atmosphere, the hospital caters to the diverse medical needs of the community. Its
+                                    team of skilled physicians and caring nurses provide a range of services, including
+                                    emergency care, orthopedics, gynecology, and pediatrics. The hospital's commitment
+                                    to excellence is evident in its modern facilities, advanced medical equipment, and
+                                    dedication to delivering personalized, quality care to every patient who walks
+                                    through its doors.</p>
+                            </div>
+                            <div class="buttons">
+                                <button>Read More</button>
+                                <button>Rate</button>
+                                <button>Share</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/hos3.jpg" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 100%; margin: 2rem auto;">
+                <div class="row g-0 p-0">
+                    <div class="col-md-4">
+                        <img src="assets/img/hos4.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body p-5">
+                            <div class="text-con">
+                                <h5 class="card-title">Hurghada branch</h5>
+                                <p class="card-text title-line"><small class="text-muted"><i
+                                            class="fas fa-calendar-alt"></i> Opend in May 3, 2025</small>
+                                </p>
+                                <p class="card-text">
+                                    Address: 567 Sheraton Road, Al-Ahiaa, Hurghada, Red Sea Governorate, Egypt</p>
+                                <p>Situated in the vibrant coastal city of Hurghada, the hospital is a trusted
+                                    healthcare provider for locals and international visitors alike. With a focus on
+                                    comprehensive medical services, Hurghada Hospital offers specialized departments
+                                    such as cardiology, neurology, dermatology, and more. The hospital's team of highly
+                                    trained doctors, nurses, and support staff work collaboratively to ensure the best
+                                    possible outcomes for patients. Equipped with state-of-the-art technology and
+                                    adhering to international standards, Hurghada Hospital is committed to providing
+                                    accessible, compassionate, and efficient healthcare services to the community it
+                                    serves.</p>
+                            </div>
+                            <div class="buttons">
+                                <button>Read More</button>
+                                <button>Rate</button>
+                                <button>Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Sec8 -->
+
+
+    <!-- Start Sec9 -->
+    <div id="links" class="links">
+        <div class="text-center bg-light">
+            <h2 class="text-dark p-3">Linkes</h2>
+        </div>
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-lg-2 col-md-5 col-sm-9 text-center p-3 my-5">
+                    <p>Follow us</p>
+                    <i class="fab fa-twitter" style="color: #008cff;"></i>
+                </div>
+                <div class="col-lg-2 col-md-5 col-sm-9 text-center p-3 my-5">
+                    <p>Follow us</p>
+                    <i class="fab fa-whatsapp" style="color: rgb(0, 198, 0); font-weight: bold;"></i>
+                </div>
+                <div class="col-lg-2 col-md-5 col-sm-9 text-center p-3 my-5">
+                    <p>Follow us</p>
+                    <i class="fab fa-linkedin-in" style="color: #008cff;"></i>
+                </div>
+                <div class="col-lg-2 col-md-5 col-sm-9 text-center p-3 my-5">
+                    <p>Follow us</p>
+                    <i class="fab fa-instagram" style="color: rgb(255, 0, 64);"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Sec9 -->
+
+
+    <!-- Start Footer -->
+    <footer style="margin-bottom: 0px; background-color: #000000;">
+        <div class="container">
+            <div class="row">
+
+                <div class="col column p-2">
+
+                    <div class="col-12 text-center mb-2 p-2 footer-img"
+                        style="border: 1px solid gray; border-color: gray transparent gray transparent;">
+                        <img src="assets/img/hosIcon.jpg" width="40px" style="border-radius: 50%;">
+                        <a href="#">
+                            <h5 class="text-light" style="display: inline-block;">Good Hospital</h5>
+                        </a>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <a href="#">
+                            <p class="text-light">Tel 000-000-000</p>
+                        </a>
+                        <a href="#">
+                            <p class="text-light">Address EGYPT</p>
+                        </a>
+                        <a href="#">
+                            <p class="text-light">Fax 000-000-000</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col column p-2">
+
+                    <div class="col-12 text-center mb-2 p-2"
+                        style="border: 1px solid gray; border-color: gray transparent gray transparent;">
+                        <img src="assets/img/hosIcon.jpg" width="40px" style="border-radius: 50%;">
+                        <a href="#">
+                            <h5 class="text-light" style="display: inline-block;">Important Links</h5>
+                        </a>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <a href="#">
+                            <p class="text-light">Visit Us</p>
+                        </a>
+                        <a href="#">
+                            <p class="text-light">Take A Look</p>
+                        </a>
+                        <a href="#">
+                            <p class="text-light">Your Health Is More Important</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col column p-2">
+
+                    <div class="col-12 text-center mb-2 p-2"
+                        style="border: 1px solid gray; border-color: gray transparent gray transparent;">
+                        <img src="assets/img/hosIcon.jpg" width="40px" style="border-radius: 50%;">
+                        <a href="#">
+                            <h5 class="text-light" style="display: inline-block;">Vision</h5>
+                        </a>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <a href="#">
+                            <p class="text-light">Serveices For All</p>
+                        </a>
+                        <a href="#">
+                            <p class="text-light">Provid Best Serveices</p>
+                        </a>
+                        <a href="#">
+                            <p class="text-light">You Will Be Better Than Before</p>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="copy-right text-center" style="border-top: 1px solid gray;">
+            <p class="text-light p-2 m-0">COPYRIGHT © 2023 . ALL RIGHT RESERVED BY ABO KAMAL</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- bootstrap -->
+    <script src="assets/js/cdn.jsdelivr.xyz_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+    <!-- js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
